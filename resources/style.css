@@ -1,0 +1,159 @@
+body{
+    color: white;
+    font-size: 16px;
+    background: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2{
+    font-family: 'Pacifico', cursive;
+}
+
+/* LANDING PAGE STYLES HERE */
+header{
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    width: 920px;
+    height: 600px;
+
+    margin-right: -460px;
+    margin-top: -300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid white;
+    border-radius: 5%;
+}
+
+header h1{
+    font-size: 8rem;
+}
+
+header h2{
+    font-size: 4rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+header a{
+    color: silver;
+    margin-top: 4rem;
+}
+
+header a:hover{
+    color: white;
+    text-shadow: 0.5px 0.5px #888;
+}
+
+.two{
+    margin-top: 1rem;
+}
+
+/* FORM OVERLAY STYLE HERE*/
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(192,192,192,0.5);
+    z-index: 2;
+}
+
+.overlay .reservation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 510px;
+    height: auto;
+
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5%;
+    box-shadow: 3px 3px 3px black;
+}
+
+.reservation-close {
+    align-self: flex-end;
+    color: black;
+    margin: 1rem;
+}
+
+.reservation-close:hover{
+    cursor: pointer;
+}
+
+.reservation h1{
+    color: black;
+    font-size: 2rem;
+    margin: 1rem;
+}
+.reservation input{
+    width: 250px;
+    height: 2rem;
+    margin: 0.5rem;
+    border-radius: 3px;
+}
+
+.reservation button{
+    text-align: center;
+    font-size: 0.75rem;
+    width: 200px;
+    margin: 1rem auto;
+    padding: 0.5rem 0.25rem;
+    color: #e6e6e6;
+    background: #a0a0a0;
+    border: none;
+    border-radius: 3px;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px 3px #888;
+}
+
+
+/* MENU IS STYLED HERE */
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 920px;
+    height: auto;
+    margin: 7rem auto;
+}
+
+.menu .close{
+    align-self: flex-end;
+}
+
+.menu .close:hover{
+    cursor: pointer;
+}
+
+.menu-item{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    border-bottom: 1px solid white;
+}
+
+.menu-item h2{
+    font-size: 4rem;
+}
+
+.menu-item h3{
+    font-size: 2rem;
+    margin-top: 2rem;
+}

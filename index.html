@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>A Restaurant</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./resources/reset.css">
+        <link rel="stylesheet" type="text/css" href="./resources/style.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header">
+            <h1>A Restaurant</h1>
+            <h2>Eat in only: Its about the Experience!</h2>
+            <a class="make-request" href="#">Click to make a reservation,</a>
+            <a class="two" href="https://www.google.com/maps/place/A+Restaurant/@33.6215256,-117.9321546,16.13z/data=!4m5!3m4!1s0x80dd20061ffa9f95:0xb4d97f72797f20c!8m2!3d33.6215793!4d-117.9280758">
+                get some direction</a>
+            <a class="see-menu two" href="#">or see the menu</a>
+        </header>
+
+        <!-- Reservation request overlay. Appears when clicking make-request above -->
+        <div class="overlay">
+            <form class="reservation" action="index.html" method="post">
+                <div class="reservation-close">
+                    <i class="far fa-window-close"></i>
+                </div>
+                <h1>Reservation Request</h1>
+                <input type="text" placeholder="Name">
+                <input class="email" type="email" placeholder="e-Mail address">
+                <input class="phone" type="number" value="your phone number" placeholder="Contact Number">
+                <input type="date" placeholder=""="Date">
+                <input type="time">
+                <button type="submit" name="button">Send Reservation Request</button>
+            </form>
+        </div>
+
+        <!-- The menu will appear when see-menu is clicked. HTML as string in resto.js -->
+
+        <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous">
+        </script>
+        <script type="text/javascript" src="./resources/resto.js"></script>
+    </body>
+</html>
